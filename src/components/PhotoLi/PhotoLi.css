@@ -1,0 +1,40 @@
+
+.Photo-li{
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.Photo-picture{
+    height: 100%;
+}
+.Photo-img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: .2rem;
+}
+.Photo-description{
+  width: 100%;
+  padding: .5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color:#fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.991), rgba(0, 0, 0, 0));
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  transition: transform .5s ease;
+}
+.Photo-li:hover .Photo-description{
+  transform: rotateX(0);
+}
+.Description-h3 , .Description-span{
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .8rem;
+}
+.Description-span{
+  font-weight: 300;
+  font-size: .7rem;
+}

@@ -1,0 +1,78 @@
+.Header{
+    background-color: #212123;
+    width: 100%;
+}
+.Header-wrapper{
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+.Header-a{
+    cursor: pointer;
+}
+.Logo-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+.Logo-svg{
+    width: 3rem;
+}
+.Logo-svg:nth-child(2){
+    width: 6rem;
+}
+.Header-ul{
+    color: #fff;
+}
+.Header-form{
+    position: relative;
+    width: 80%;
+}
+.Header-label{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.Label-submit{
+    position: static;
+    opacity: initial;
+    pointer-events: all;
+    width: 2rem;
+    height: 2rem;
+    color: #545454;
+    position: absolute;
+    top: calc( 50% - 1rem);
+    cursor: pointer;
+}
+.Input-wrapper{
+    position: relative;
+}
+.Header-input{
+    background-color: #FFF;
+    padding: .5rem .5rem .5rem 2.5rem;
+    width: 100%;
+}
+.Header-submit{
+    position: absolute;
+    opacity: 0;
+    pointer-events: 0;
+}
+
+@media (max-width: 530px){
+    .Header-wrapper{
+        width: 95%;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .Header-form{
+        width: 100%;
+    }
+}
+

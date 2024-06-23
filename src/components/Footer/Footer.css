@@ -1,0 +1,40 @@
+.Footer{
+    background-color: #212123;
+}
+.Footer-svg{
+    width: 10rem;
+    fill: #909092;
+    margin: 0 auto;
+    padding: 2rem 0 0;
+}
+.Footer-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.Social-svg{
+    width: 1.5rem;
+    color: #909092;
+    transition: color .5s ease;
+}
+.Social-svg:hover{
+    color: #fff;
+}
+.Footer-copy{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0 1rem;
+}
+.Copy-span{
+    color: #909092;
+    font-weight: 300;
+    font-size: .8rem;
+    text-align: center;
+}
